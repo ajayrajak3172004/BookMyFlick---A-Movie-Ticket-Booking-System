@@ -74,7 +74,7 @@ Stripe ↔ Backend ↔ Booking System
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ajayrajak3172004/BookMyFlick---A-Movie-Ticket-Booking-System
 cd BookMyFlick
 ```
 
