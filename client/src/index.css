@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+
+body{
+    background-color: black;
+    
+    
+}
+
+/* index.css ya App.css me */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  
+
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+  /* Works in Chrome, Edge, Safari */
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 4px; /* Change this to your desired width */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888888;  /* Change thumb color */
+    border-radius: 4px;
+  }
+
+
+
+   /* Works in Chrome, Edge, Safari */
+  .custom-scrollbar-2::-webkit-scrollbar {
+    width: 4px; /* Change this to your desired width */
+  }
+
+  .custom-scrollbar-2::-webkit-scrollbar-thumb {
+    background-color: #888;  /* Change thumb color */
+    border-radius: 4px;
+  }
+
+  
+
+
+
+
+
+/* Loadin animation */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #ffffff #0000;
+ 
+  animation: l1 1s infinite;
+}
+@keyframes l1 {to{transform: rotate(.5turn)}}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* HTML: <div class="loader"></div> */
+.loader-2 {
+  width: 34px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#ffff 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#ffff);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
